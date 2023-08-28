@@ -3,6 +3,16 @@
 
 ## Model
 
+## Log Likelihood
+$$
+\begin{align}
+f(Y_i;\pi_r) &= \prod_{j=1}^J\prod_{k=1}^K(\pi_{jrk})^{Y_{ijk}}\\
+P(Y_i|\pi, p) &= \sum_{r=1}^Rp_r\prod_{j=1}^J\prod_{k=1}^K(\pi_{jrk})^{Y_{ijk}}\\
+L(\pi, p) &= \prod_{i=1}^N\left(\sum_{r=1}^Rp_r\prod_{j=1}^J\prod_{k=1}^K(\pi_{jrk})^{Y_{ijk}}\right)\\
+\ln L(\pi, p) &= \sum_{i=1}^N \ln \left(\sum_{r=1}^Rp_r\prod_{j=1}^J\prod_{k=1}^K(\pi_{jrk})^{Y_{ijk}}\right)\\
+\end{align}
+$$
+
 ## Parameters Estimation via EM Algorithm
 
 ## References
